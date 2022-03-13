@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE databaseChangeLog [
+        <!ELEMENT databaseChangeLog (include)*>
+        <!ATTLIST databaseChangeLog
+                xmlns CDATA #REQUIRED
+                xmlns:xsi CDATA #REQUIRED
+                xmlns:ext CDATA #REQUIRED
+                xsi:schemaLocation CDATA #REQUIRED>
+        <!ELEMENT include (#PCDATA)>
+        <!ATTLIST include
+                file CDATA #REQUIRED
+                relativeToChangelogFile CDATA #REQUIRED>
+        ]>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.7.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <include file="/db/liquibase/changelog/create-author-table.xml" relativeToChangelogFile="false"/>
+    <include file="/db/liquibase/changelog/insert-author.xml" relativeToChangelogFile="false"/>
+
+
+</databaseChangeLog>

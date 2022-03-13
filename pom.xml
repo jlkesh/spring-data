@@ -52,7 +52,14 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.liquibase</groupId>
+            <artifactId>liquibase-core</artifactId>
+            <version>4.8.0</version>
+        </dependency>
+
     </dependencies>
+
     <profiles>
         <profile>
             <id>dev</id>
