@@ -2,7 +2,7 @@ app:
   datasource:
     main:
       driver-class-name: org.postgresql.Driver
-      jdbc-url: jdbc:postgresql://localhost:5432/teach_spring/jdbc
+      jdbc-url: jdbc:postgresql://localhost:5432/teach_spring?currentSchema=jdbc
       username: javohir
       password: admin123
       pool-size: 30

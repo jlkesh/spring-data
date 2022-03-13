@@ -17,11 +17,7 @@ public class MovieDataAccessService implements MovieDao {
 
     @Override
     public List<Movie> selectMovies() {
-        var sql = """
-                SELECT id, name, release_date
-                FROM movie
-                LIMIT 100;
-                 """;
+        var sql = "SELECT id, name, release_date FROM movie LIMIT 100;";
         return jdbcTemplate.query(sql, new MovieRowMapper());
     }
 
