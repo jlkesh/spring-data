@@ -9,7 +9,7 @@
     <changeSet id="1" author="admin">
         <sql>
             insert into author(id, name)
-            values (12, 'John  Hunt');
+            values (13, 'John  Hunt');
         </sql>
     </changeSet>
 </databaseChangeLog>
